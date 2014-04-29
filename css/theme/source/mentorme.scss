@@ -1,0 +1,84 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Background of the presentation
+$backgroundColor: #fff;
+
+// Primary/body text
+$mainFont: 'Roboto Slab', sans-serif;
+$mainFontSize: 36px;
+$mainColor: #404040;
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: 'Roboto Slab', sans-serif;
+$headingColor: #00b6aa;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: #00B6AA;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+
+// Include theme-specific fonts
+@font-face {
+	font-family: 'Roboto Slab', 'sans-serif';
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(208,208,208,1), rgba(255,255,255,1) );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.reveal  {
+  p {
+    margin-top:50px;
+  }
+
+  li {
+    margin-top:20px;
+  }
+
+  .profileContainer {
+    margin-top: 50px;
+    display: inline-block;
+
+    img {
+      margin: 0px 30px;
+    }
+
+    p {
+      margin-top:10px;
+      font-size: 0.75em;
+    }
+  }
+}

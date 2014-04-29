@@ -1,36 +1,37 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
 /**
- * Sky theme for reveal.js.
+ * Default theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-.reveal a:not(.image) {
-  line-height: 1.3em; }
+@font-face {
+  font-family: 'Roboto Slab', 'sans-serif';
+  font-weight: normal;
+  font-style: normal; }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #add9e4;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background-color: #f7fbfc; }
+  background: #d0d0d0;
+  background: -moz-radial-gradient(center, circle cover, white 0%, #d0d0d0 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #d0d0d0));
+  background: -webkit-radial-gradient(center, circle cover, white 0%, #d0d0d0 100%);
+  background: -o-radial-gradient(center, circle cover, white 0%, #d0d0d0 100%);
+  background: -ms-radial-gradient(center, circle cover, white 0%, #d0d0d0 100%);
+  background: radial-gradient(center, circle cover, white 0%, #d0d0d0 100%);
+  background-color: white; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: #333333; }
+  color: #404040; }
 
 ::selection {
   color: white;
-  background: #134674;
+  background: #ff5e99;
   text-shadow: none; }
 
 /*********************************************
@@ -43,12 +44,12 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #333333;
-  font-family: "Quicksand", sans-serif;
+  color: #00b6aa;
+  font-family: "Roboto Slab", sans-serif;
   line-height: 0.9em;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  text-shadow: none; }
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
@@ -57,7 +58,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #3b759e;
+  color: #00b6aa;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -66,13 +67,13 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #74a7cb;
+  color: #1dfff0;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #264c66; }
+  background: #006a63; }
 
 /*********************************************
  * IMAGES
@@ -80,7 +81,7 @@ body {
 .reveal section img {
   margin: 15px 15px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #333333;
+  border: 4px solid #404040;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -90,7 +91,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #3b759e;
+  border-color: #00b6aa;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -98,31 +99,31 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #3b759e; }
+  border-right-color: #00b6aa; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #3b759e; }
+  border-left-color: #00b6aa; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #3b759e; }
+  border-bottom-color: #00b6aa; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #3b759e; }
+  border-top-color: #00b6aa; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #74a7cb; }
+  border-right-color: #1dfff0; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #74a7cb; }
+  border-left-color: #1dfff0; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #74a7cb; }
+  border-bottom-color: #1dfff0; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #74a7cb; }
+  border-top-color: #1dfff0; }
 
 /*********************************************
  * PROGRESS BAR
@@ -131,7 +132,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #3b759e;
+  background: #00b6aa;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -142,4 +143,17 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #3b759e; }
+  color: #00b6aa; }
+
+.reveal p {
+  margin-top: 50px; }
+.reveal li {
+  margin-top: 20px; }
+.reveal .profileContainer {
+  margin-top: 50px;
+  display: inline-block; }
+  .reveal .profileContainer img {
+    margin: 0px 30px; }
+  .reveal .profileContainer p {
+    margin-top: 10px;
+    font-size: 0.75em; }
